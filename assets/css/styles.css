@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: 
+        url('../fonts/Poppins-Regular.ttf') format('truetype')
+}
+@font-face {
+    font-family: "Poppins Bold Italic";
+    src: url(../fonts/Poppins-ExtraBoldItalic.ttf) format('truetype');
+}
+
+body{
+    background-color: hsl(0, 0%, 94%);
+    font-family: "Poppins", sans-serif;
+    font-style: unset;
+}
+
+.container{
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px 10px 100px 10px;
+}
+
+
+.content{
+    width: 100%;
+    padding: 20px;
+
+}
+.form-date-container{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+.form-date{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.form-date-date{
+    display: flex;
+    gap:16px;
+}
+
+.form-date-shell{
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: hsl(0, 0%, 54%);
+}
+
+.form-date-shell label{
+    font-size: 13px;
+}
+
+.form-date-shell input{
+    display: flex;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: hsl(0, 0%, 84%);
+    border-style: solid;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+.submit-button{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.submit-button button{
+    background: none;
+    border: none;
+    z-index: 3;
+}
+
+.submit-button img{
+    padding: 12px;
+    width: 50px;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 100%;
+    border-width: 0px;
+}
+
+.result-date-values {
+    font-family: "Poppins Bold Italic";
+    font-size: 38px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.result-date-values p > span {
+    color: hsl(259, 100%, 65%);
+}
+
+.line{
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: solid 2px hsl(0, 0%, 97%);
+    position: absolute;
+    z-index: 2;
+}
+
+
+@media (min-width : 768px) {
+    .container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 60px 0;
+        width: 600px;
+        height: 500px;
+        align-items: center;
+    }
+    .content{
+        width: 90%;
+        padding: 0;
+    }
+
+    .form-date{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .form-date-shell {
+        display: flex;
+        width: 25%;
+        flex-direction: column;
+    }
+
+    .submit-button {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .line{
+        width:100%;
+        position: initial;
+    }
+    .result-date-values{
+        font-size: 65px;
+    }
+
+    .submit-button{
+        padding: 0;
+        padding-top: 20px;
+    }
+    .submit-button img {
+        padding: 13px;
+        width: 60px;
+    }
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="form-date-container">
+        <form id="age-calculator" class="form-date">
+          <div class="form-date-date">
+            <div class="form-date-shell">
+              <label for="day">DAY</label>
+              <input type="text" placeholder="DD" id="day" name="day">
+              <!-- <span class="wrong">must to be a valid day</span> -->
+            </div>
+            <div class="form-date-shell">
+              <label for="month">MONTH</label>
+              <input type="text" placeholder="MM" id="month" name="month">
+              <!-- <span class="wrong">must to be a valid month</span> -->
+            </div>
+            <div class="form-date-shell">
+              <label for="year">YEAR</label>
+              <input type="text" placeholder="YYYY" id="year" name="year">
+              <!-- <span class="wrong">must to be a valid year</span> -->
+            </div>
+          </div>
+          <div class="submit-button">
+            <button type="submit">
+              <img src="assets/images/icon-arrow.svg" alt="Arrow">
+            </button>
+            <div class="line"></div>
+          </div>
+        </form>
+      </div>
+      <div class="result-date-container">
+        <div class="result-date-values">
+          <p><span id="result-years">--</span> years</p>
+          <p><span id="result-months">--</span> months</p>
+          <p><span id="result-days">--</span>days</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a  href="https://www.linkedin.com/in/elian-cueva-coronel/">Elian Cueva Coronel</a>.
+  </div>
+  <script src="assets/js/calculate.js"></script>
+</body>
+</html>
